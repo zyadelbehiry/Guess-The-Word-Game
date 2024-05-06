@@ -245,6 +245,12 @@ function pop_up(exit, hide_element) {
 game_desc_btn.addEventListener("click", function () {
   game_popup.classList.remove("hide");
   game_area.classList.add("half-opacity");
+  disable_btns();
   let exit = document.querySelector(".game-pop-up .exit");
   pop_up(exit, game_popup);
+  exit.addEventListener("click", () => {
+    check_btn.disabled = false;
+    hints_btn.disabled = false;
+    game_desc_btn.disabled = false;
+  });
 });

@@ -169,6 +169,7 @@ button:disabled {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  caret-color: transparent;
   /* padding: 40px 0px; */
   order: 2;
   .check-btn {
@@ -315,6 +316,7 @@ button:disabled {
     z-index: 10;
     top: 180px;
     left: 10%;
+    box-shadow: rgb(0, 0, 0, 0.3) 2px 2px 20px 10px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -361,6 +363,7 @@ button:disabled {
     .popup-btns {
       button {
         width: 45%;
+        caret-color: transparent;
       }
       button:hover {
         opacity: 0.9;
